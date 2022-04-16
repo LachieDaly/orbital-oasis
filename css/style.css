@@ -1,0 +1,348 @@
+/* 
+ * style.css 
+ *
+ * Author: Lachlan Daly
+ * Date: 09-Jun-2021
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+	font-family: 'Josefin Slab', serif;
+}
+
+body {
+	font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
+	font-size: 1vw;
+	line-height: 1.5em;
+	background-color: #090026;
+}
+
+nav {
+	background-color: #090026;
+	/* position: fixed; */
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	border-bottom: 1px solid #DD4A22;
+}
+
+#heading {
+	position: fixed;
+}
+
+a {
+	color: #DD4A22;
+}
+
+a:hover {
+	color: red;
+}
+
+a:active {
+	color: #090026;
+}
+
+nav ul {
+	display: flex;
+	justify-content: right;
+	margin: 0 10px;
+}
+
+h1 {
+	color: white;
+}
+
+article h2 {
+	border-bottom: 1px solid black;
+	margin-bottom: 0.5em;
+}
+
+/* group similar stuff */
+nav li {
+	list-style: none;
+}
+
+
+nav a {
+	display: block;
+	color: #FEF4EF;
+	padding: 0.2em 1.5em;
+	margin: 0.2em 0.2em;
+	border-radius: 5px;
+	text-decoration: none;
+	font-weight: bold;
+	transition: color 1s ease;
+	transition: background-color 1s ease;
+	text-transform: uppercase;
+}
+
+label {
+	color: #DD4A22;
+	font-weight: bold;
+}
+
+p {
+	padding: 2%;
+}
+
+footer {
+	color: #FEF4EF;
+	display: flex;
+}
+
+figure {
+	max-width: 600px;
+	margin: 5px;
+	margin-top: 20px;
+	float: right;
+}
+
+figure.left {
+	float: left;
+}
+
+figure img {
+	display: block;
+	max-width: 100%;
+	border: 2px solid black;
+}
+
+select {
+	padding: 10px;
+}
+
+nav a:hover {
+    color:black;
+    background-color: #FEF4EF;
+}
+
+.selected {
+	background-color: #FEF4EF;
+	color: black;
+}
+
+fieldset {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+input {
+	width: 100%
+}
+
+input[type=text] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+textarea {
+	height: 300px;
+	width: 300px;
+}
+
+main {
+	padding-top: 80px;
+	padding-bottom: 20%;
+	background-color: aliceblue;
+}
+
+.background-image {
+	background-image: url("D:\\Projects\\University\\2021\\Semester 1\\DECO1400\\Project\\Website\\images & files\\pexels-pixabay-45208.jpg");
+	/* background-position: center center; */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.top {
+	display: block;
+	height: 100px;
+}
+
+.articles {
+	display: flexbox;
+	margin: 1em;
+	padding: 1em;
+	justify-content: space-between;
+}
+
+article {
+	display: flex;
+	flex-direction: row;
+	padding: 100px;
+	margin: 0.1em;
+	/* margin: 1em 1em;
+	padding: 1em;
+	border-radius: 1px;
+	height: auto;
+	overflow: hidden; */
+}
+
+article div.text{
+	background-color: rgba(255, 255, 255, 0.9);
+	border: 0.1em solid black;		
+	margin: 1em 1em;
+	padding: 1em;
+	border-radius: 1px;
+	height: auto;
+	overflow: hidden;
+	width: 60%;
+	padding-bottom: 10px;
+}
+
+div.text a {
+	background-color: #DD4A22;
+	padding: 10px;
+	border-radius: 5px;
+	color: white;
+	text-decoration: none;
+	margin-bottom: 1px;
+	text-transform: capitalize;
+}
+
+article div.image {
+	border: 0.2em solid white;
+}
+
+.white {
+	background-color: white;
+}
+
+.cream {
+	background-color: #FEF4EF;
+}
+
+.light-blue {
+	background-color: aliceblue;
+}
+
+.blue {
+	background-color: #090026;
+}
+
+.banner {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.book-now {
+	text-align: center;
+	background-color: black;
+	color: white;
+	padding: 1em 0.05em;
+	margin: 2em;
+	font-size: 2em;
+	border: 0.05em solid #DD4A22;
+	transition: background-color 0.5s ease;
+	border-radius: 10px;
+}
+
+.book-now a {
+	color: white;
+	text-decoration: none;
+}
+
+.book-now:hover {
+	background-color: #DD4A22;
+	color: black;
+}
+
+
+.quote {
+	width: 20%;
+	background-color: black;
+	color: white;
+	margin: 40px 40px;
+	border: 1px solid #DD4A22;
+	border-radius: 10px;
+	padding: 2em;
+	font-weight: bold;
+	font-style: italic;
+}
+
+#website-title {
+	transition: none;
+}
+
+#logo {
+	display: flexbox;
+}
+
+#website-title:hover {
+	background-color: #090026;
+}
+
+#object {
+	position: fixed;
+	left: 15%;
+	top: 2%;
+	height: 30px;
+	width: 30px;
+	border-radius:100%;
+	background: white;
+}
+
+@media only screen and (max-width: 960px) {
+
+	.articles {
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		font-size: 2vw;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+
+	body {
+		font-size: 12px;
+	}
+
+	nav ul {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	nav {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: unset;
+	}
+
+	nav ul li {
+		width: 100%;
+		margin: 0;
+		padding: 10% 5%;
+	}
+
+	nav a {
+		display: block;
+		color: #FEF4EF;
+		padding: 0.2em 50%;
+		margin: 0em 0.2em;
+		border-radius: 1px;
+
+	}
+
+
+}
+
+
+
+/* Will need to add another media query in between desktop and mobile*/
