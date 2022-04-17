@@ -1,123 +1,179 @@
-<doctype html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Homepage</title>
-        <link rel=stylesheet href="css/style.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-            rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;300;500;700&display=swap"
-            rel="stylesheet">
-    </head>
+<head>
+    <title>OO - Booking</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Orbital Oasis Bookings">
+    <meta name="author" content="Lachlan Daly">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="js/aos/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <body>
-        <header>
-            <nav id="heading">
+<body>
+
+    <header>
+        <h1>ORBITAL OASIS</h1>
+        <!-- My Primary Navigation -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="about.html">ABOUT</a>
+                </li>
+                <li>
+                    <a href="rooms.html">ROOMS</a>
+                </li>
+                <li>
+                    <a href="experiences.html">EXPERIENCES</a>
+                </li>
+                <li>
+                    <a href="gallery.html">GALLERY</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-form">
+            <div class="text">
+                <h2>Start Booking</h2>
+
+                <form name="booking-form" onsubmit=validateForm()>
+                    <fieldset>
+                        <legend>Room Selection</legend>
+                        <label for="room">*Room:</label>
+                        <select id="room" name="room" required>
+                            <option value="">Not Selected</option>
+                            <option value="Clone">Couples Room</option>
+                            <option value="Mate">Mates Room</option>
+                            <option value="Luxury">Business Suite</option>
+                        </select>
+
+                        <label for="form-arrival-date">*Arrival Date:</label>
+                        <input type="date" id="form-arrival-date" name="arrivalDate" required/>
+                        
+                        <label for="form-departure-date">*Departure Date:</label>
+                        <input type="date" id="form-departure-date" name="departureDate" required/>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label for="fname">*First name:</label>
+                        <input type="text" id="fname" name="fname" required>
+
+                        <label for="lname">*Last name:</label>
+                        <input type="text" id="lname" name="lname" required>
+
+                        <label for="country">Country:</label>
+                        <select id="country" name="country">
+                            <option value="US">US</option>
+                            <option value="AUS">AUS</option>
+                            <option value="CA">CA</option>
+                            <option value="NZ">NZ</option>
+                            <option value="EU">EU</option>
+                            <option value="GB">GB</option>
+                            <option value="RU">RU</option>
+                            <option value="CN">IDK</option>
+                        </select>
+
+                        <label for="phone">Phone:</label>
+                        <input type="text" id="phone" name="phone">
+
+                        <label for="email">*Email:</label>
+                        <input type="text" id="email" name="email" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Age Group</legend>
+                        <div>
+                            <input type="radio" id="young-adult" name="age" value="young-adult">
+                            <label for="young-adult">18-24</label><br>
+                        </div>
+                        <div>
+                            <input type="radio" id="youngish-adult" name="age" value="youngish-adult">
+                            <label for="youngish-adult">25-30</label><br>
+                        </div>
+                        <div>
+                            <input type="radio" id="older" name="age" value="older">
+                            <label for="older">30+</label> 
+                        </div>
+                        
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>What activities are you interested in?</legend>
+                        <div>
+                            <input type="checkbox" id="pong" name="pong" value="Pong">
+                            <label for="pong">Space Pong</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="dining" name="dining" value="Dining">
+                            <label for="dining">Dining</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="space-walk" name="space-walk" value="Walk">
+                            <label for="space-walk">Space Walk</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="no-activity" name="no-activity" value="None">
+                            <label for="no-activity">None of the above</label>
+                        </div>                        
+
+                        <label for="other-comments">Other Activities?:</label>
+                        <textarea id="other-comments" name="other-comments" cols=10></textarea>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>How are you travelling Here</legend>
+                        <div>
+                            <input type='radio' id="rocket" name="travel" value="rocket">
+                            <label for="rocket">Rocket</label><br>
+                        </div>
+                        <div>
+                            <input type='radio' id="teleportation" name="travel" value="teleportation">
+                            <label for="teleportation">Teleportation</label><br>
+                        </div>
+                        <div>
+                            <input type='radio' id="other-travel" name="travel" value="other-travel">
+                            <label for="other-travel">Other Service</label>
+                        </div>
+                    </fieldset>
+                    <input type="submit">
+                    <a href="thank-you.html">Thank-you</a>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <figure>
+                <img src="images & files/orbital-logo.png" alt="Orbital Oasis Logo">
+            </figure>
+        </div>
+        <div class="contact-us">
+            <h3>Contact Us</h3>
+            <p><strong>E:</strong> info@orbitaloasis.com</p>
+            <p><strong>M:</strong> 0421 228 848</p>
+            <br>
+            <p>2021 National Aeronautics and Space Administration. All rights reserved</p>
+        </div>
+        <div>
+            <nav class="footer-pages">
                 <ul>
-                    <a href="index.html" id="website-title">
-                        <li id="logo">
-                            <h1>Orbital Oasis</h1>
-                        </li>
-                    </a>
-                </ul>
-                <div id="object">
-
-                </div>
-                <ul>
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="aboutpage.html">About Page</a>
                     </li>
                     <li>
-                        <a href="resort.html">Resort</a>
-                    </li>
-                    <li>
-                        <a href="roomsnsuites.html">Quarters</a>
-                    </li>
-                    <li>
-                        <a href="bookings.html" class="selected">Boarding Pass</a>
-                    </li>
-                    <li>
-                        <a href="events.html">Experiences</a>
-                    </li>
-                    <li>
-                        <a href="gallery.html">Gallery</a>
+                        <a href="support.html">Contact Us</a>
                     </li>
                 </ul>
             </nav>
-        </header>
-        <main>
-            <section id="contact-form">
-                <div class="text">
-                    <h2>Start Booking - not close to finalised</h2>
+        </div>
+    </footer>
+</body>
 
-                    <form>
-                        <fieldset>
-                            <legend>Your Details</legend>
-                            <label for="room">Room:</label>
-                            <select id="room" name="room">
-                                <option value="Clone">Clone Room</option>
-                                <option value="Mate">Mates Room</option>
-                                <option value="Luxury">Luxury Room</option>
-                            </select>
-
-                            <label for="fname">First name:</label>
-                            <input type="text" id="fname" name="fname">
-
-                            <label for="lname">Last name:</label>
-                            <input type="text" id="lname" name="lname">
-
-                            <label for="country">Country:</label>
-                            <select id="state" name="state">
-                                <option value="US">US</option>
-                                <option value="AUS">AUS</option>
-                                <option value="CA">CA</option>
-                                <option value="NZ">NZ</option>
-                                <option value="EU">EU</option>
-                                <option value="GB">GB</option>
-                                <option value="RU">RU</option>
-                                <option value="IDK">IDK</option>
-                            </select>
-
-                            <label for="postcode">Postcode:</label>
-                            <input type="text" id="postcode" name="postcode">
-
-                            <label for="phone">Phone:</label>
-                            <input type="text" id="phone" name="phone">
-
-                            <label for="email">Email:</label>
-                            <input type="text" id="email" name="email">
-
-                            <label for="age">Age Group:</label>
-                            <input type="radio" id="young-adult" name="gender" value="young-adult">
-                            <label for="young-adult">18-24</label><br>
-                            <input type="radio" id="youngish-adult" name="gender" value="youngish-adult">
-                            <label for="youngish-adult">25-30</label><br>
-                            <input type="radio" id="older" name="gender" value="older">
-                            <label for="older">30+</label>
-                        </fieldset>
-
-                        <fieldset>
-                            <legend>What activities are you interested in?</legend>
-
-                            <label for="favourites">What Activities are you interested in?</label>
-                            <input type="checkbox" id="pong" name="pong" value="Pong">
-                            <label for="fell">Real-life Pong</label><br>
-                            <input type="checkbox" id="earth" name="earth" value="Earth">
-                            <label for="meal">Gazing at Earth</label><br>
-                            <input type="checkbox" id="race" name="race" value="Race">
-                            <label for="none">None of the above</label>
-
-                            <label for="other-comments">Other Comments:</label>
-                            <textarea id="other-comments" name="other-comments" row=10 cols=10></textarea>
-                        </fieldset>
-                        <input type="submit">
-                    </form>
-                </div>
-            </section>
-        </main>
-    </body>
-
-    </html>
-</doctype>
+</html>

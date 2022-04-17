@@ -1,348 +1,523 @@
-/* 
- * style.css 
- *
- * Author: Lachlan Daly
- * Date: 09-Jun-2021
- */
+/**
+style.css
+
+Author: Lachlan Daly
+Date: 09-Jun-2021
+
+Written for Orbital Oasis Website
+*/
+
+/* NASA COLOURS #FC3D21 orange #0B3D91 dark blue #21dffc orange compliment*/
 
 * {
     margin: 0;
     padding: 0;
 }
 
-h1 {
-	font-family: 'Josefin Slab', serif;
+html {
+    font-size: 100%;
 }
 
 body {
-	font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
-	font-size: 1vw;
-	line-height: 1.5em;
-	background-color: #090026;
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 1.5rem;
+    background-color: #061F4A;
 }
 
 nav {
-	background-color: #090026;
-	/* position: fixed; */
-	display: flex;
-	justify-content: space-between;
-	padding: 20px 0;
-	left: 0;
-	right: 0;
-	top: 0;
-	border-bottom: 1px solid #DD4A22;
-}
-
-#heading {
-	position: fixed;
+    background-color: #061F4A;
+    border-bottom: 1px solid #DD361C;
+    display: flex;
+    justify-content: center;
 }
 
 a {
-	color: #DD4A22;
+    text-decoration: none;
 }
 
 a:hover {
-	color: red;
+    color: #046B99;
 }
 
 a:active {
-	color: #090026;
+    color: #DD361C;
 }
 
-nav ul {
-	display: flex;
-	justify-content: right;
-	margin: 0 10px;
-}
-
-h1 {
-	color: white;
-}
-
-article h2 {
-	border-bottom: 1px solid black;
-	margin-bottom: 0.5em;
-}
-
-/* group similar stuff */
-nav li {
-	list-style: none;
-}
-
-
-nav a {
-	display: block;
-	color: #FEF4EF;
-	padding: 0.2em 1.5em;
-	margin: 0.2em 0.2em;
-	border-radius: 5px;
-	text-decoration: none;
-	font-weight: bold;
-	transition: color 1s ease;
-	transition: background-color 1s ease;
-	text-transform: uppercase;
-}
-
-label {
-	color: #DD4A22;
-	font-weight: bold;
-}
-
-p {
-	padding: 2%;
-}
-
-footer {
-	color: #FEF4EF;
-	display: flex;
-}
-
-figure {
-	max-width: 600px;
-	margin: 5px;
-	margin-top: 20px;
-	float: right;
-}
-
-figure.left {
-	float: left;
-}
-
-figure img {
-	display: block;
-	max-width: 100%;
-	border: 2px solid black;
-}
-
-select {
-	padding: 10px;
-}
-
-nav a:hover {
-    color:black;
-    background-color: #FEF4EF;
-}
-
-.selected {
-	background-color: #FEF4EF;
-	color: black;
-}
-
-fieldset {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-}
-
-input {
-	width: 100%
-}
-
-input[type=text] {
-	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
-	box-sizing: border-box;
-}
-
-textarea {
-	height: 300px;
-	width: 300px;
+header {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 10;
 }
 
 main {
-	padding-top: 80px;
-	padding-bottom: 20%;
-	background-color: aliceblue;
+    padding: 100px 0 50px 0;
+    background-color: #212121;
 }
 
-.background-image {
-	background-image: url("D:\\Projects\\University\\2021\\Semester 1\\DECO1400\\Project\\Website\\images & files\\pexels-pixabay-45208.jpg");
-	/* background-position: center center; */
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
+fieldset {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: flex-start;
+    margin: 2rem;
+    padding: 2rem;
+    border: 5px solid black;
 }
 
-.top {
-	display: block;
-	height: 100px;
+/* fieldset div {
+    flex-direction: column;
+} */
+
+legend {
+    background-color: white;
+    border-radius: 25px;
+    padding: 1rem;
+    color: black;
+    border: 1px solid #DD361C
 }
 
-.articles {
-	display: flexbox;
-	margin: 1em;
-	padding: 1em;
-	justify-content: space-between;
+label {
+    color: black;
+    padding: 1rem;
+}
+
+input, select, textarea {
+    padding: 1rem;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 100%;
+}
+
+fieldset input, fieldset label, fieldset select {
+    width: 30%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0.2rem 1.5rem;
+}
+
+nav a {
+    font-family: 'Lucida Bright';
+    color: #FFFFFF;
+    padding: 0.2rem 1.5rem;
+    margin: 0.2rem 1rem;
+    border-radius: 5px;
+    transition: color 1s ease;
+    transition: background-color 1s ease;
+}
+
+nav a:hover {
+    color: black;
+    background-color: #FFFFFF
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-family: 'Lucida Bright', serif;
+    color: #FFFFFF;
+    background-color: #061F4A;
+    text-align: center;
+    padding: 0.2rem 0;
+}
+
+h2 {
+    font-family: 'Lucida Bright', serif;
+    color: #105BD8;
+    font-weight: lighter;
+}
+
+h3 {
+    font-family: 'Lucida Bright', serif;
+    color: #02BFE7;
+    font-weight: lighter;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+footer {
+    padding: 2rem;
+    display: flex;
+    background-color: #061F4A;
+    justify-content: center;
+}
+
+footer p, footer h3 {
+    color: white;
+}
+
+footer div {
+    padding: 0 1rem;
+    margin: 0 1rem;
+    width: 30%;
+}
+
+footer figure img {
+    border-radius: 0;
+    border: none;
+}
+
+footer nav {
+    border: none;
+}
+
+figure {
+    margin: 1vw;
+    align-items: center;
+}
+
+figure img {
+    border-radius: 50%;
+    max-width: 100%;
+    border: 5px solid black;
+    overflow: hidden;
+}
+
+section {
+    background-color: white;
+    color: black;
+    padding: 2rem;
+    margin: 2rem;
+    border: 5px solid black;
+}
+
+section p {
+    padding-left: 2rem;
 }
 
 article {
-	display: flex;
-	flex-direction: row;
-	padding: 100px;
-	margin: 0.1em;
-	/* margin: 1em 1em;
-	padding: 1em;
-	border-radius: 1px;
-	height: auto;
-	overflow: hidden; */
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    padding: 2rem;
+    margin: 2rem;
+    background-color: #FFFFFF;
+    border: 5px solid black;
+    overflow: hidden;
 }
 
-article div.text{
-	background-color: rgba(255, 255, 255, 0.9);
-	border: 0.1em solid black;		
-	margin: 1em 1em;
-	padding: 1em;
-	border-radius: 1px;
-	height: auto;
-	overflow: hidden;
-	width: 60%;
-	padding-bottom: 10px;
+article div {
+    align-self: center;
+    overflow: visible;
 }
 
-div.text a {
-	background-color: #DD4A22;
-	padding: 10px;
-	border-radius: 5px;
-	color: white;
-	text-decoration: none;
-	margin-bottom: 1px;
-	text-transform: capitalize;
+article .room-description {
+    width: 60%;
 }
 
-article div.image {
-	border: 0.2em solid white;
+.footer-pages ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 1rem 0rem;
 }
 
-.white {
-	background-color: white;
+.footer-pages ul li {
+    margin: 0.5rem 0;
 }
 
-.cream {
-	background-color: #FEF4EF;
+
+
+/* article:nth-child(2n-1)  could also be used here article:nth-child(2n) for the other*/
+article.right-aligned {
+    border-bottom-left-radius: 450px;
+    border-top-left-radius: 450px;
 }
 
-.light-blue {
-	background-color: aliceblue;
+article.left-aligned {
+    border-bottom-right-radius: 450px;
+    border-top-right-radius: 450px;
 }
 
-.blue {
-	background-color: #090026;
+article.right-aligned div:nth-child(1), article.left-aligned div:nth-child(2) {
+    width: 30%;
 }
 
-.banner {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+article.right-aligned div:nth-child(2), article.left-aligned div:nth-child(1) {
+    width: 40%;
+}
+
+article p {
+    margin: 2rem 0;
+}
+
+article a {
+    color: white;
+    background-color: #DD361C;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+article a:hover {
+    background-color: #02BFE7;
+    color: white;
+}
+
+article a:active {
+    background-color: #99231B;
+}
+
+em {
+    color: #99231B;
+}
+
+.contact-us {
+    margin-bottom: 2rem;
+    border-left: 1px dotted white;
+}
+
+.banners {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25vh 0 10vh 0;
+}
+
+.quote {
+    width: 20%;
+    color: #FFFFFF;
+    margin: 0.2rem 1.5rem;
+    border: 1px solid #DD361C;
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: #000000;
 }
 
 .book-now {
-	text-align: center;
-	background-color: black;
-	color: white;
-	padding: 1em 0.05em;
-	margin: 2em;
-	font-size: 2em;
-	border: 0.05em solid #DD4A22;
-	transition: background-color 0.5s ease;
-	border-radius: 10px;
-}
-
-.book-now a {
-	color: white;
-	text-decoration: none;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    margin: 2rem;
+    height: 7rem;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border: 0.05rem solid #DD361C;
+    transition: background-color 1s ease;
+    border-radius: 50%;
 }
 
 .book-now:hover {
-	background-color: #DD4A22;
-	color: black;
+    color: #FFFFFF;
+    background-color: #DD361C;
 }
 
+.book-now:active {
+    background-color: #02BFE7;
+}
 
-.quote {
-	width: 20%;
-	background-color: black;
-	color: white;
-	margin: 40px 40px;
-	border: 1px solid #DD4A22;
+.book-now a {
+    color: white;
+}
+
+.selected {
+    color: black;
+    background-color: #FFFFFF;
+    font-weight: bold;
+
+}
+.earth-background {
+    background-image: url("../images & files/earth.jpg");
+    background-color: #000000;
+}
+
+.home {
+    background-image: url("../images & files/spaceX.jpeg");
+}
+
+.about {
+    background-image: url("../images & files/internation-space-station.jpg");
+}
+
+.room {
+    background-image: url("../images & files/space-mountain.jpg");
+}
+
+.experiences {
+    background-image: url("../images & files/pong-game.jpg");
+}
+
+.hero-image {
+    height: 100vh;
+}
+
+.half-hero-image {
+    height: 30vh;
+}
+
+.hero-image h1, .half-hero-image h1 {
+    padding-top: 10vh;
+    background-color: transparent;
+    font-weight: lighter;
+}
+
+.earth-background, .hero-image, .half-hero-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* THIS IS NOT MY ORIGINAL CODE BEWARE */
+/* Given/written during practical */
+.slideshow .tns-outer {
+	max-width: 600px;
+	margin-top: 1em;
+}
+
+.slideshow img {
+	width: 100%;
 	border-radius: 10px;
-	padding: 2em;
+}
+
+.slideshow .tns-controls {
+	/* display: none; */
+	text-align: center;
+}
+
+.slideshow .tns-controls button {
+	cursor: pointer;
 	font-weight: bold;
-	font-style: italic;
 }
 
-#website-title {
-	transition: none;
+body.js #slideshow .tns-controls {
+	display: block;
 }
 
-#logo {
-	display: flexbox;
+.gallery-section {
+    display: flex;
+    flex-wrap: wrap
 }
 
-#website-title:hover {
-	background-color: #090026;
-}
-
-#object {
-	position: fixed;
-	left: 15%;
-	top: 2%;
-	height: 30px;
-	width: 30px;
-	border-radius:100%;
-	background: white;
-}
-
-@media only screen and (max-width: 960px) {
-
-	.articles {
-		margin: 0;
-		padding: 0;
-	}
-
-	body {
-		font-size: 2vw;
-	}
-}
-
-@media only screen and (max-width: 480px) {
-
-	body {
-		font-size: 12px;
-	}
-
-	nav ul {
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-
-	nav {
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		position: unset;
-	}
-
-	nav ul li {
-		width: 100%;
-		margin: 0;
-		padding: 10% 5%;
-	}
-
-	nav a {
-		display: block;
-		color: #FEF4EF;
-		padding: 0.2em 50%;
-		margin: 0em 0.2em;
-		border-radius: 1px;
-
-	}
-
+.gallery-section img {
+    width: 50%;
 
 }
 
+@media only screen and (max-width: 1920px) {
+    body {
+        font-size: 1.5rem;
+    }
+}
 
+@media only screen and (max-width: 1200px) {
+    body {
+        font-size: 1.3rem;
+    }
 
-/* Will need to add another media query in between desktop and mobile*/
+    main {
+        padding: 50px 0 0 0;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+    footer div {
+        width: 90%;
+    }
+
+    footer figure {
+        display: none;
+    }
+
+    /* Unfortunatelt need to be specific */
+    article.right-aligned div:nth-child(1), article.left-aligned div:nth-child(2),
+    article.right-aligned div:nth-child(2), article.left-aligned div:nth-child(1) {
+        width: 100%;
+    }
+
+    article.left-aligned {
+        flex-direction: column;
+        border-radius: 0;
+    }
+    article.right-aligned {
+        flex-direction: column-reverse;
+        border-radius: 0;
+    }
+
+    fieldset div {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    fieldset div input, fieldset div label {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+    fieldset input, fieldset label, fieldset select {
+        width: 90%;
+    }
+
+    .gallery-section {
+        flex-direction: column;
+    }
+
+    .gallery-section img {
+        width: 90%;
+    }
+    
+}
+
+@media only screen and (max-width: 700px) {
+
+    body {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article div {
+        width: 100%;
+    }
+
+    article {
+        flex-direction: column;
+        border-radius: 10px;
+    }
+
+    article div {
+        width: 100%;
+    }
+    
+    article a {
+        width: 100%;
+    }
+
+    label, input {
+        width: 90%;
+    }
+
+    .banners {
+        flex-direction: column;
+    }
+
+    .quote {
+        width: 80%;
+    }
+
+    article .room-description {
+        width: 100%;
+    }
+}

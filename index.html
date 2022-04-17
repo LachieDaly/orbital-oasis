@@ -1,149 +1,154 @@
-<doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Homepage</title>
-        <link rel=stylesheet href="css/style.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;300;500;700&display=swap" rel="stylesheet">
-    </head>
 
-    <body>
-        <header>        
-        <nav id="heading">
-            <ul>
-                <a href="index.html" id="website-title">
-                    <li id="logo">
-                        <h1>Orbital Oasis</h1>
-                    </li>
-                </a>
-            </ul>
-            <div id="object">
+<head>
+    <title>OO - Home</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Orbital Oasis Homepage">
+    <meta name="author" content="Lachlan Daly">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="js/aos/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-            </div>
+<body>
+
+    <header>
+        <h1>ORBITAL OASIS</h1>
+        <!-- My Primary Navigation -->
+        <nav>
             <ul>
                 <li>
-                    <a href="index.html" class="selected">Home</a>
+                    <a href="index.html" class="selected">HOME</a>
                 </li>
                 <li>
-                    <a href="resort.html">Resort</a>
+                    <a href="about.html">ABOUT</a>
                 </li>
                 <li>
-                    <a href="roomsnsuites.html">Quarters</a>
+                    <a href="rooms.html">ROOMS</a>
                 </li>
                 <li>
-                    <a href="bookings.html">Boarding Pass</a>
+                    <a href="experiences.html">EXPERIENCES</a>
                 </li>
                 <li>
-                    <a href="events.html">Experiences</a>
-                </li>
-                <li>
-                    <a href="gallery.html">Gallery</a>
+                    <a href="gallery.html">GALLERY</a>
                 </li>
             </ul>
         </nav>
-        </header>
+    </header>
 
-        <main class="background-image">
-            <div class="banner">
+    <main class="earth-background">
+        <!-- Main resort image -->
+        <div class="home hero-image">
+            <h1>ORBITAL OASIS</h1>
+        </div>
+
+
+        <div>
+            <div class="banners">
+                <div class="book-now">
+                    <h2>
+                        <a href="bookings.html">BOOK</a>
+                    </h2>
+                </div>
+
                 <div class="quote">
-                    <p>"An incredible place to stay on holiday, the photos from orbit are nothing compared to the actual view"</p>
+                    <blockquote>
+                        "An <em>incredible</em> place to stay on your next holiday, the photos from orbit
+                        don't do justice to that view from the resort porthole"
+                    </blockquote>
                     <p>- Oasis Patron</p>
                 </div>
-                <div class="book-now">
-                    <h2><a href="bookings.html">BOOK NOW</a></h2>
+            </div>
+
+            <!-- About description -->
+            <article class="left-aligned">
+                <div>
+                    <h2>First of its Kind</h2>
+                    <p>
+                        The Orbital Oasis is a hotel built entirely <em>in orbit</em>, with all the luxuries you
+                        expect from the best hotels on the ground.
+                        The view from the balcony is unmatched, and the experiences are out of this world. Be quick to
+                        purchase your boarding pass, as we have limited
+                        space even in outer space.
+                    </p>
+                    <a href="about.html">Explore</a>
                 </div>
-            </div>
+                <div data-aos="fade-right">
+                    <figure class="picture-icon" >
+                        <img src="images & files/dragon-spacecraft.jpg" alt="Dragon spacecraft">
+                    </figure>
+                </div>
+            </article>
 
-            <!-- Use aria labels -->
-            <div class="articles">
-                <article class="white">
-                    <div class="text">
-                        <h2>First of its Kind</h2>
-                        <p>
-                            The Orbital Oasis is a hotel built entirely <strong>in orbit</strong>, with all the luxuries you expect from the best hotels on the ground. 
-                            The view from the balcony is unmatched, and the experiences are out of this world. Be quick to purchase your boarding pass, as we have limited
-                            space even in outer space.
-                        </p>
-                        <a href="resort.html">Learn More about our Orbital Hotel</a>
-                    </div>
-                    <div>
-                        <figure>
-                            <img src="images & files/dragon-spacecraft-refueled.jpg" alt="Dragon spacecraft">
-                        </figure>
-                    </div>
-                   
-
-                </article>
-                <article class="light-blue">
-                    <div>
-                        <figure>
-                            <img src="images & files/luxury-room.jpeg" alt="Luxury room">
-                        </figure>
-                    </div>
-                    <div class="text">
-                        <h2>Luxury Rooms</h2>
-                        <p>
-                            Over the years we've added many pods to our orbital hotel, no matter your price point and circumstance
-                            we doubt there isn't a room for you. We have single suites, rooms for friends, rooms for couples, even rooms
-                            for a group of up to 10 clones!
-                        </p>
-                        <a href="roomsnsuites.html">See our selection of Rooms</a>
-                    </div>
-                </article>                
-                <article class="cream">
-                    <div class="text">
-                    <h2>Lovely Experiences</h2>
+            <!-- Room description -->
+            <article class="right-aligned">
+                <div data-aos="fade-left">
+                    <figure class="picture-icon">
+                        <img src="images & files/luxury room.jpeg" alt="Luxury room">
+                    </figure>
+                </div>
+                <div>
+                    <h2>Luxury Rooms</h2>
                     <p>
-                        We have many experiences on-board the orbital oasis, available for singles, couples and friend groups. Our flagship experience
-                        is of course, our in-space pong matches. Where two players go head to head in a variation of the game pong, with a jetpack. If This
-                        doesn't sound like your cup of tea, don't worry, we have more tame activities as well
+                        Over the years we've added many pods to our orbital hotel, <em>no matter your price point</em> and
+                        circumstance
+                        we doubt there isn't a room for you. We have single suites, rooms for friends, rooms for
+                        couples, even rooms
+                        for a group of up to 10 clones!
                     </p>
-                    <a href="pong-history.html">Find the experience for you</a>
-                    </div>
-                </article>
-                <article class="white">
-                    <div class="text">
-                    <h2>Lovely Experiences</h2>
-                    <p>
-                        This is just some random text so that we know what's going on
-                        Even more random text is here, this isn't actually going to be
-                        a part of the final website
-                    </p>
-                    <a href="pong-history.html">Learn more about whatever</a>
-                    </div>
-                </article>
+                    <a href="roomsnsuites.html">Explore</a>
+                </div>
+            </article>
 
-            </div>
-        </main>
-        <footer>
-            <div>
-                <h3>Contact Information</h3>
-                <p>E: bookings@orbitaloasis.com</p>
-                <p>P: 07 0931 1093</p>
-            </div>
-            <div>
-                <p>Copyright under NASA documentation</p>
-            </div>
-            <nav>
+            <!-- Activity description -->
+            <article class="left-aligned">
+                <div>
+                    <h2>Extreme Activities</h2>
+                    <p>
+                        When in orbit, every normal activity becomes a little bit different due to zero gravity. 
+                        Come and play <em>space pong</em>, go on a space walk, eat a floating dinner, or just hang out (literally).
+                        You will never get tired of these experiences
+                    </p>
+                    <a href="#">Explore</a>
+                </div>
+                <div data-aos="fade-right">
+                    <figure class="picture-icon">
+                        <img src="images & files/pong-bat.jpeg" alt="Pong bat">
+                    </figure>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <figure>
+                <img src="images & files/orbital-logo.png" alt="Orbital Oasis Logo">
+            </figure>            
+        </div>
+        <div class="contact-us">
+            <h3>Contact Us</h3>
+            <p><strong>E:</strong> info@orbitaloasis.com</p>
+            <p><strong>M:</strong> 0421 228 848</p>
+            <br>        
+            <p>2021 National Aeronautics and Space Administration. All rights reserved</p>
+        </div>
+        <div>
+            <nav class="footer-pages">
                 <ul>
                     <li>
-                        <a href="about.html">About Page</a>
+                        <a href="aboutpage.html">About Page</a>
                     </li>
                     <li>
-                        <a href="reviews.html">Reviews</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact Us</a>
-                    </li>
-                    <li>
-                        <a href="support.html">Support</a>
+                        <a href="support.html">Contact Us</a>
                     </li>
                 </ul>
             </nav>
-        </footer>
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/script.js"></script>
-    </body>
- 
+        </div>
+    </footer>
+	<script src="js/aos/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
